@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze-Track Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="weather.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Check Weather</h1>
+    <p>With Our Breeze-Track Weather Forecasting Web-Application</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    
+  </div>
+  
+    <script src="script.js"></script>
+    
+    <div id="weather-container">
+        <h2>Breeze-Track Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city of your choice">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+    
+</body>
+</html>
